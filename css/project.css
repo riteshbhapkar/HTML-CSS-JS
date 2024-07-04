@@ -1,1 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: maroon;
+    font-size: 1.75em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:50px;
+    margin-top: 30px;
+}
+
+.item {
+    background-color: grey;
+    border:3px solid black;
+    margin:15px;
+    position: relative;
+    top:0;
+    margin:15px;
+    padding:15px;
+}
+
+p {
+    width:90%;
+    margin:auto;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 50px ;
+}
+
+#t1{
+    background-color: lightcoral;
+}
+#t2{
+    background-color: pink;
+    padding-left: 67.5px;
+    padding-right: 67.5px;
+}
+#t3{
+    background-color: lightgoldenrodyellow ;
+    padding-left:62.5px;
+    padding-right: 62.5px;
+}
+
+@media(min-width:992px){
+    
+    .row1,.row2,.row3{
+        float: left;
+        width:33.33%;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .row1,.row2 {
+        float:left;
+        width:50%;
+    }
+
+    .row3 {
+        width:100%;
+        float:left;
+    }
+}
+
+@media (max-width:767px) {
+    .row1,.row2,.row3 {
+        width: 100%;
+        float:left;
+    }
+}
 
